@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ title or "Assa Fashion" }}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body>
+  <header class="navbar">
+    <div class="logo">
+      <a href="{{ url_for('app_routes.index') }}" class="logo-text">ASSA <span>FASHION</span></a>
+    </div>
+
+    <nav class="menu">
+      <a href="{{ url_for('app_routes.index') }}">Trang chủ</a>
+      <a href="{{ url_for('app_routes.category', cat='male') }}">Nam</a>
+      <a href="{{ url_for('app_routes.category', cat='female') }}">Nữ</a>
+      <a href="{{ url_for('app_routes.category', cat='unisex') }}">Unisex</a>
+      <a href="{{ url_for('app_routes.about') }}">Giới thiệu</a>
+      <a href="{{ url_for('app_routes.contact') }}">Liên hệ</a>
+      <a href="{{ url_for('app_routes.cart') }}">🛒 Giỏ hàng</a>
+      {% if session.get('user') %}
+        <a href="{{ url_for('app_routes.account') }}">👤 {{ session['user'] }}</a>
+        <a href="{{ url_for('app_routes.logout') }}">Đăng xuất</a>
+      {% else %}
+        <a href="{{ url_for('app_routes.login') }}">Đăng nhập</a>
+      {% endif %}
+    </nav>
+  </header>
+  <main class="container">
+    {% with messages = get_flashed_messages(with_categories=true) %}
+      {% if messages %}
+        <div class="flash-wrap">
+          {% for category, msg in messages %}
+            <div class="flash {{ category }}">{{ msg }}</div>
+          {% endfor %}
+        </div>
+      {% endif %}
+    {% endwith %}
+    {% block content %}{% endblock %}
+  </main>
+
+  <footer class="footer">
+    <div>
+      <h3>Assa Fashion</h3>
+      <p>Thời trang nam nữ - phong cách hiện đại & cá tính</p>
+    </div>
+    <div class="links">
+      <a href="{{ url_for('app_routes.about') }}">Giới thiệu</a>
+      <a href="{{ url_for('app_routes.contact') }}">Liên hệ</a>
+      <a href="#">Chính sách đổi trả</a>
+      <a href="#">FAQ</a>
+    </div>
+  </footer>
+  
+  <script src="{{ url_for('static', filename='js/carousel.js') }}"></script>
+
+</body>
+</html>

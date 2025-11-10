@@ -1,0 +1,82 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="register-container">
+  <div class="register-card">
+    <h2 class="register-title">Đăng ký tài khoản</h2>
+
+    {% with messages = get_flashed_messages(with_categories=true) %}
+      {% if messages %}
+        {% for category, message in messages %}
+          <div class="flash {{ category }}">{{ message }}</div>
+        {% endfor %}
+      {% endif %}
+    {% endwith %}
+
+    <form method="POST" class="register-form">
+      <div class="form-group">
+        <label for="username">Tên người dùng</label>
+        <input type="text" name="username" id="username" placeholder="Nhập tên người dùng" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="Nhập email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="password">Mật khẩu</label>
+        <input type="password" name="password" id="password" placeholder="Nhập mật khẩu" required>
+      </div>
+
+      <div class="form-group">
+        <label for="confirm">Nhập lại mật khẩu</label>
+        <input type="password" name="confirm" id="confirm" placeholder="Nhập lại mật khẩu" required>
+      </div>
+
+      <hr>
+
+      <div class="form-group">
+        <label for="gender">Giới tính</label>
+        <select name="gender" id="gender" required>
+          <option value="">-- Chọn giới tính --</option>
+          <option value="male">Nam</option>
+          <option value="female">Nữ</option>
+          <option value="unisex">Unisex</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="age">Tuổi</label>
+        <input type="number" name="age" id="age" placeholder="Nhập tuổi" min="10" max="100" required>
+      </div>
+
+      <div class="form-group">
+        <label for="location">Địa chỉ</label>
+        <input type="text" name="location" id="location" placeholder="Thành phố / khu vực" required>
+      </div>
+
+      <div class="form-group">
+        <label for="preferred_color">Màu yêu thích</label>
+        <input type="text" name="preferred_color" id="preferred_color" placeholder="VD: Xanh, Đen, Đỏ">
+      </div>
+
+      <div class="form-group">
+        <label for="preferred_brand">Thương hiệu yêu thích</label>
+        <input type="text" name="preferred_brand" id="preferred_brand" placeholder="VD: Nike, Zara, LV">
+      </div>
+
+      <div class="form-group">
+        <label for="favorite_category">Danh mục yêu thích</label>
+        <input type="text" name="favorite_category" id="favorite_category" placeholder="VD: Jacket, Shoes, Pants">
+      </div>
+
+      <button type="submit" class="btn-register">Đăng ký</button>
+    </form>
+
+    <p class="login-text">
+      Đã có tài khoản?
+      <a href="{{ url_for('account.login') }}">Đăng nhập ngay</a>
+    </p>
+  </div>
+</div>
+{% endblock %}

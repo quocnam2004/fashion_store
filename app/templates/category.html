@@ -1,0 +1,86 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h1 class="category-title">Danh mục: {{ cat | capitalize }}</h1>
+
+<!-- Bộ lọc và sắp xếp -->
+<div class="filter-bar">
+  <form method="get" class="filter-form">
+    <label>Giá từ:
+      <input type="number" name="min" placeholder="Min" min="0">
+    </label>
+    <label>đến:
+      <input type="number" name="max" placeholder="Max" min="0">
+    </label>
+
+    <label>Size:
+      <select name="size">
+        <option value="">Tất cả</option>
+        <option>S</option>
+        <option>M</option>
+        <option>L</option>
+        <option>XL</option>
+      </select>
+    </label>
+
+    <label>Màu:
+      <select name="color">
+        <option value="">Tất cả</option>
+        <option>Trắng</option>
+        <option>Đen</option>
+        <option>Xanh</option>
+        <option>Hồng</option>
+      </select>
+    </label>
+
+    <label>Sắp xếp:
+      <select name="sort">
+        <option value="new">Mới nhất</option>
+        <option value="price_asc">Giá thấp → cao</option>
+        <option value="price_desc">Giá cao → thấp</option>
+      </select>
+    </label>
+
+    <button class="btn" type="submit">Lọc</button>
+  </form>
+</div>
+
+<!-- Danh sách sản phẩm -->
+<div class="product-grid">
+  {% for p in products %}
+    <div class="product-card">
+      <a href="{{ url_for('app_routes.product_detail', pid=p.get('id')) }}">
+        <img src="{{ p.get('image', 'https://via.placeholder.com/400x400?text=No+Image') }}" alt="{{ p.get('name', '') }}">
+      </a>
+      <h4>{{ p.get('name', 'Không có tên') }}</h4>
+      <p class="price">{{ "{:,.0f}".format(p.get('price') | float) }} VNĐ</p>
+      <a class="btn" href="{{ url_for('app_routes.product_detail', pid=p.get('id')) }}">Xem chi tiết</a>
+    </div>
+  {% else %}
+    <p>Không có sản phẩm nào trong danh mục này.</p>
+  {% endfor %}
+</div>
+
+<!-- Phân trang -->
+{% if total_pages > 1 %}
+<div class="pagination">
+  {% if page > 1 %}
+    <a href="{{ url_for('app_routes.category', cat=cat, page=page-1, size=request.args.get('size',''), color=request.args.get('color',''), sort=request.args.get('sort','')) }}" class="page-btn">&laquo; Trước</a>
+  {% endif %}
+
+  {% for p in range(1, total_pages + 1) %}
+    {% if p == page %}
+      <span class="page-btn active">{{ p }}</span>
+    {% else %}
+      <a href="{{ url_for('app_routes.category', cat=cat, page=p, size=request.args.get('size',''), color=request.args.get('color',''), sort=request.args.get('sort','')) }}" class="page-btn">{{ p }}</a>
+    {% endif %}
+  {% endfor %}
+
+  {% if page < total_pages %}
+    <a href="{{ url_for('app_routes.category', cat=cat, page=page+1, size=request.args.get('size',''), color=request.args.get('color',''), sort=request.args.get('sort','')) }}" class="page-btn">Sau &raquo;</a>
+  {% endif %}
+</div>
+{% endif %}
+
+
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container">
+  <h2>Hồ sơ người dùng</h2>
+  <p><strong>Tên:</strong> {{ user.username }}</p>
+  <p><strong>Email:</strong> {{ user.email }}</p>
+  <p><strong>Giới tính:</strong> {{ user.gender }}</p>
+  <p><strong>Độ tuổi:</strong> {{ user.age }}</p>
+  <p><strong>Địa chỉ:</strong> {{ user.location }}</p>
+
+  <a href="{{ url_for('account.account_history') }}">Xem lịch sử mua hàng</a> |
+  <a href="{{ url_for('account.logout') }}">Đăng xuất</a>
+</div>
+{% endblock %}

@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container">
+  <h2>Lịch sử mua hàng</h2>
+  {% if purchases %}
+    <ul>
+      {% for p in purchases %}
+        <li>
+          <strong>ID sản phẩm:</strong> {{ p.product_id }} |
+          <strong>Số lượng:</strong> {{ p.quantity }} |
+          <strong>Tổng:</strong> {{ p.total_spent }} |
+          <strong>Ngày mua:</strong> {{ p.purchased_at }}
+        </li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p>Chưa có đơn hàng nào.</p>
+  {% endif %}
+</div>
+{% endblock %}

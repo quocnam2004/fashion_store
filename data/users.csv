@@ -1,0 +1,202 @@
+id,username,gender,age,location,preferred_color,preferred_brand,favorite_category,last_login
+1,Thắng,male,17,Đà Nẵng,Red,Gucci,Jacket,2025-02-07 15:26:18
+2,Kim,male,59,Cần Thơ,White,Fila,Shorts,2025-07-19 23:40:53
+3,Hà,male,21,TP.HCM,Red,Dior,Hat,2025-08-22 15:34:18
+4,Dũng,male,57,Cần Thơ,Brown,Gucci,Skirt,2025-07-31 12:23:23
+5,Tiên,female,16,TP.HCM,Brown,New Balance,Sneakers,2025-05-23 14:45:13
+6,Nga,male,37,Hà Nội,White,Lacoste,Jeans,2025-06-20 07:32:56
+7,Phúc,female,54,Đà Nẵng,Black,Hermes,Bag,2025-08-30 01:49:41
+8,Long,female,21,Cần Thơ,Green,Reebok,Shirt,2025-04-23 15:04:42
+9,Thư,male,20,Hà Nội,Red,The North Face,Jeans,2025-09-09 10:56:42
+10,Thành,male,40,Đà Nẵng,Gray,Converse,Jacket,2025-08-12 12:20:37
+11,Kiên,female,29,Đà Nẵng,White,Reebok,Jacket,2025-02-18 10:49:01
+12,Thịnh,male,26,Huế,Brown,Under Armour,Bag,2025-01-07 11:48:29
+13,Thảo,female,19,TP.HCM,Black,New Balance,Shorts,2025-01-27 08:30:07
+14,Tiến,male,29,Cần Thơ,Beige,Puma,Skirt,2025-04-02 03:02:33
+15,Anh,female,25,Đà Nẵng,Blue,Gucci,Bag,2025-05-28 08:01:26
+16,Thịnh,female,53,Huế,Yellow,Lacoste,Shirt,2025-08-01 08:06:33
+17,Thảo,male,48,Huế,White,Adidas,Jeans,2025-09-26 22:25:40
+18,Nga,male,59,Huế,Yellow,Zara,Shorts,2025-10-13 12:22:08
+19,Quỳnh,female,49,Đà Nẵng,Pink,Nike,Jeans,2025-01-01 12:06:43
+20,Phú,female,57,Đà Nẵng,White,The North Face,Shorts,2025-05-04 00:31:08
+21,Ngọc,female,16,Đà Nẵng,Pink,H&M,Bag,2025-08-24 13:49:14
+22,Lan,female,56,Cần Thơ,Yellow,Puma,Jacket,2025-02-06 06:38:41
+23,Kiên,male,50,Cần Thơ,Black,Reebok,Shirt,2025-03-19 22:24:13
+24,Thủy,male,23,Đà Nẵng,Green,Gucci,T-Shirt,2025-07-03 18:01:55
+25,Thắng,male,21,Huế,White,Burberry,Jacket,2025-02-13 23:04:19
+26,Minh,female,51,TP.HCM,Green,Dior,Hat,2025-07-16 16:44:59
+27,Thiên,male,50,TP.HCM,Green,Lacoste,Shirt,2025-09-11 14:28:10
+28,Khánh,female,23,TP.HCM,Red,Zara,Shirt,2025-09-27 13:30:07
+29,Chi,male,53,TP.HCM,Black,Zara,T-Shirt,2025-03-29 20:59:32
+30,Thành,male,18,Đà Nẵng,White,Dior,Dress,2025-06-10 01:00:46
+31,Trang,female,29,Cần Thơ,Blue,Fila,Hat,2025-09-10 04:08:25
+32,Hiền,male,46,Huế,Red,Uniqlo,Jeans,2025-09-04 02:46:01
+33,Trang Anh,female,38,Huế,Brown,Hermes,T-Shirt,2025-07-02 13:22:09
+34,Nhật,male,19,Huế,Beige,Uniqlo,Dress,2025-05-29 20:01:55
+35,Quang,male,50,Huế,Blue,Calvin Klein,Jacket,2025-03-17 00:52:16
+36,Trang,female,31,Hà Nội,Gray,Burberry,Jeans,2025-09-24 17:38:54
+37,Hạnh,male,21,TP.HCM,Blue,Calvin Klein,Skirt,2025-03-15 04:45:58
+38,Loan,male,41,Hà Nội,Blue,Lacoste,T-Shirt,2025-07-26 12:58:55
+39,Đức,female,45,Đà Nẵng,Brown,Burberry,Skirt,2025-10-06 22:03:08
+40,Nga,male,34,TP.HCM,Black,Fila,Bag,2025-04-03 16:04:03
+41,Hiếu,female,19,Hà Nội,Yellow,Chanel,Bag,2025-04-15 10:13:19
+42,Vy,male,19,Cần Thơ,White,H&M,Jeans,2025-07-03 04:04:14
+43,Khoa,male,59,TP.HCM,Brown,Uniqlo,Hat,2025-05-15 11:35:40
+44,Thảo,male,55,Hà Nội,Brown,Fila,Hat,2025-02-13 10:55:13
+45,Tâm,female,32,TP.HCM,Beige,Gucci,Sneakers,2025-03-14 11:38:40
+46,Anh,male,58,Đà Nẵng,Gray,New Balance,Jeans,2025-10-23 23:03:15
+47,Bình,female,55,Cần Thơ,White,Zara,Bag,2025-07-05 03:36:23
+48,Sơn,female,24,Đà Nẵng,White,Gucci,Shirt,2025-02-01 07:14:55
+49,Trâm,male,44,Cần Thơ,Green,Reebok,Bag,2025-04-18 23:49:49
+50,Bình,female,58,Hà Nội,Blue,Under Armour,Jeans,2025-06-06 21:49:56
+51,Lan,male,33,Đà Nẵng,Yellow,Puma,Shirt,2025-06-27 23:15:04
+52,Quyên,female,48,Huế,Green,Adidas,Jeans,2025-06-02 13:19:08
+53,Thắng,female,33,Hà Nội,Black,New Balance,Jacket,2025-02-27 10:39:38
+54,Thắng,female,26,Huế,Pink,Calvin Klein,Bag,2025-02-01 04:52:25
+55,Bình,male,20,TP.HCM,Pink,Adidas,Shirt,2025-02-10 00:41:32
+56,Ngân,male,43,TP.HCM,Black,The North Face,Shirt,2025-02-21 07:53:23
+57,Hải,female,29,TP.HCM,White,Converse,Bag,2025-04-29 00:27:10
+58,Tuấn,male,31,TP.HCM,Blue,Calvin Klein,T-Shirt,2025-05-11 18:49:05
+59,Phát,female,42,TP.HCM,Green,H&M,Jeans,2025-03-22 06:37:52
+60,Quỳnh,male,46,TP.HCM,Red,Hermes,Shirt,2025-09-19 01:54:22
+61,Tùng,male,30,Hà Nội,Red,Lacoste,Shirt,2025-04-26 07:08:03
+62,Trang,male,33,Đà Nẵng,Pink,Lacoste,Bag,2025-06-18 13:32:55
+63,Yến,male,23,Đà Nẵng,Blue,Fila,Sneakers,2025-08-26 04:14:14
+64,Hà,male,54,Huế,Beige,New Balance,Shorts,2025-04-02 02:26:05
+65,Phụng,male,40,Cần Thơ,Red,Under Armour,T-Shirt,2025-08-01 05:01:06
+66,Văn,female,16,Cần Thơ,Pink,Puma,Shirt,2025-05-13 11:55:22
+67,Trường,male,58,Đà Nẵng,Yellow,New Balance,Jeans,2025-05-09 08:03:11
+68,Mẫn,female,48,Đà Nẵng,Brown,New Balance,Shorts,2025-10-23 17:06:04
+69,Lưu,female,51,TP.HCM,Red,Calvin Klein,Shorts,2025-10-15 23:40:56
+70,Nhật,male,55,Cần Thơ,Green,Lacoste,Bag,2025-05-18 21:51:49
+71,An,female,34,TP.HCM,Brown,Fila,Hat,2025-09-21 12:33:44
+72,Tuyết,female,45,Huế,Gray,Puma,Bag,2025-09-29 09:09:23
+73,Hiền,male,58,Hà Nội,Green,Dior,Hat,2025-02-06 04:08:45
+74,Yến,male,31,Đà Nẵng,Red,Puma,Jacket,2025-10-18 05:43:37
+75,Dũng,male,31,Huế,Yellow,Zara,Skirt,2025-05-17 20:07:57
+76,Trí,male,60,Huế,Gray,Lacoste,Dress,2025-04-21 01:54:53
+77,Nam,male,22,Huế,Red,H&M,Bag,2025-07-27 22:59:14
+78,Nguyên,male,51,TP.HCM,White,Hermes,Jacket,2025-01-21 19:43:48
+79,Nguyên,female,44,Cần Thơ,Pink,Calvin Klein,Bag,2025-02-26 07:42:01
+80,Hào,male,46,Huế,Green,Gucci,Sneakers,2025-08-30 23:46:07
+81,Vỹ,female,56,TP.HCM,Green,Hermes,Jeans,2025-02-09 17:05:41
+82,Thắm,female,31,Đà Nẵng,Beige,New Balance,Bag,2025-07-27 05:27:16
+83,Huy,male,25,TP.HCM,Brown,Levi's,Dress,2025-04-11 15:26:47
+84,Hoa,female,42,Đà Nẵng,Pink,Hermes,Shorts,2025-10-06 00:48:07
+85,Hiếu,male,42,Huế,Yellow,Nike,Hat,2025-08-22 13:02:00
+86,Quỳnh,female,16,Đà Nẵng,Green,Lacoste,Shorts,2025-08-25 16:00:25
+87,Thịnh,male,47,TP.HCM,Green,Calvin Klein,Skirt,2025-01-14 03:11:50
+88,Dũng,female,37,Huế,Blue,Hermes,Jacket,2025-07-24 17:24:59
+89,Lâm,male,41,Cần Thơ,Yellow,Nike,Jeans,2025-09-24 13:51:15
+90,Diệu,female,24,Huế,Blue,Adidas,Sneakers,2025-06-14 00:39:04
+91,Quỳnh,female,29,Huế,Beige,New Balance,Shorts,2025-10-03 16:52:41
+92,Trang,female,32,Hà Nội,Gray,Nike,Bag,2025-02-19 21:40:39
+93,Hạnh,female,30,Hà Nội,Black,Nike,Dress,2025-10-03 00:21:12
+94,Quân,male,55,TP.HCM,Red,Levi's,Skirt,2025-10-09 19:11:09
+95,Bảo Anh,male,52,TP.HCM,Gray,Under Armour,Shirt,2025-08-31 04:12:03
+96,Nhi,male,26,Đà Nẵng,White,Fila,T-Shirt,2025-09-20 12:06:18
+97,Tùng,female,41,TP.HCM,White,Fila,Dress,2025-01-05 23:12:24
+98,Lan,female,59,Cần Thơ,White,Fila,T-Shirt,2025-07-04 08:11:31
+99,Bảo,female,58,Đà Nẵng,White,Dior,Shirt,2025-04-11 02:11:20
+100,Bình,female,47,Hà Nội,Brown,Converse,Skirt,2025-04-27 15:25:07
+101,Văn,male,43,TP.HCM,Pink,Under Armour,Hat,2025-09-17 17:13:10
+102,Thịnh,female,45,Huế,Yellow,Under Armour,Shirt,2025-09-17 20:22:32
+103,Thảo,male,33,Huế,Red,Hermes,Hat,2025-08-31 07:19:08
+104,Hảo,female,37,Hà Nội,Gray,New Balance,Jacket,2025-04-23 22:56:43
+105,Thủy,male,38,Đà Nẵng,Beige,Under Armour,Hat,2025-03-09 16:48:02
+106,Lưu,female,51,Hà Nội,Pink,Puma,Jeans,2025-03-20 17:51:23
+107,Thắng,female,47,Cần Thơ,Red,Chanel,Skirt,2025-03-26 00:39:10
+108,Hào,male,21,Đà Nẵng,Red,Lacoste,Dress,2025-06-13 17:50:46
+109,Tùng,female,46,Cần Thơ,Pink,Converse,Shorts,2025-08-21 14:47:51
+110,Thảo Linh,female,38,Huế,Green,The North Face,Sneakers,2025-09-04 03:05:54
+111,Thành,male,28,Đà Nẵng,White,Burberry,Jacket,2025-03-17 04:29:11
+112,Quang,male,46,Đà Nẵng,Yellow,Dior,Hat,2025-05-13 03:27:31
+113,Trâm,male,28,Đà Nẵng,Red,Converse,Jacket,2025-06-20 00:05:24
+114,Tú,male,50,TP.HCM,Green,Adidas,T-Shirt,2025-06-04 11:15:31
+115,Lộc,female,60,TP.HCM,Gray,Uniqlo,T-Shirt,2025-04-06 13:42:01
+116,Thư,female,46,Huế,Gray,New Balance,Jacket,2025-01-27 11:04:49
+117,Hạnh,female,46,Hà Nội,White,Lacoste,Skirt,2025-01-24 14:05:05
+118,Hương,male,25,TP.HCM,Yellow,The North Face,Jeans,2025-04-02 16:57:50
+119,Thảo,male,51,Huế,Yellow,Reebok,Hat,2025-06-06 16:45:25
+120,Thảo,female,44,Huế,Green,Fila,Shorts,2025-07-15 12:17:06
+121,Tùng,male,55,Hà Nội,Red,Puma,Sneakers,2025-10-16 08:51:54
+122,Trang Anh,male,26,TP.HCM,Blue,Burberry,Jeans,2025-02-19 00:12:28
+123,Ngọc,male,42,Huế,Yellow,Chanel,Sneakers,2025-06-05 12:55:22
+124,Hà,male,34,Đà Nẵng,Gray,Zara,Dress,2025-06-21 14:34:21
+125,Thuận,male,43,Hà Nội,Pink,Gucci,Jacket,2025-03-02 01:24:40
+126,Tiến,male,20,Hà Nội,Blue,The North Face,Hat,2025-04-16 12:37:29
+127,Thảo Linh,female,44,Hà Nội,Gray,The North Face,Shorts,2025-03-09 05:45:27
+128,Tiến,female,44,Hà Nội,Yellow,Adidas,Shorts,2025-03-04 04:41:06
+129,Kim,female,54,Đà Nẵng,Black,Zara,Dress,2025-08-07 06:10:03
+130,Nhật,male,59,Đà Nẵng,Yellow,Adidas,Jacket,2025-03-24 20:30:46
+131,Hiền,female,33,TP.HCM,Yellow,Calvin Klein,Skirt,2025-02-18 01:56:28
+132,Khang,female,38,Huế,Beige,New Balance,Jeans,2025-04-16 18:21:07
+133,Ngọc,female,42,Huế,Green,Lacoste,Bag,2025-10-19 09:12:48
+134,Hà,female,21,Đà Nẵng,Green,New Balance,Jeans,2025-02-21 22:07:20
+135,Vỹ,female,48,Hà Nội,Pink,Hermes,Shorts,2025-02-07 23:12:40
+136,Hạnh,male,49,Đà Nẵng,Yellow,Chanel,Skirt,2025-01-16 03:18:48
+137,Đông,male,29,Đà Nẵng,Pink,Levi's,Sneakers,2025-09-02 09:21:40
+138,Khánh,female,23,Hà Nội,Yellow,Gucci,Jacket,2025-08-10 11:43:03
+139,Tùng,male,51,Huế,White,Gucci,Jeans,2025-09-26 19:48:02
+140,Nguyên,male,57,TP.HCM,Gray,The North Face,Bag,2025-02-16 08:04:23
+141,Văn,female,42,Huế,Gray,Gucci,Skirt,2025-04-28 10:34:17
+142,Lộc,male,40,TP.HCM,Yellow,Dior,Jacket,2025-09-02 03:44:47
+143,Hoa,female,42,Đà Nẵng,Pink,Under Armour,T-Shirt,2025-04-21 11:38:44
+144,Trâm,female,53,Cần Thơ,Gray,Levi's,Skirt,2025-07-02 10:30:51
+145,Thịnh,female,38,Đà Nẵng,Pink,Burberry,Shorts,2025-08-19 14:15:25
+146,Đạt,female,28,TP.HCM,Yellow,Lacoste,Dress,2025-09-27 09:54:43
+147,Châu,female,18,Đà Nẵng,Gray,Lacoste,Shorts,2025-01-04 00:52:21
+148,Trang Anh,male,47,Hà Nội,Blue,Dior,Hat,2025-09-26 21:47:06
+149,Yến,male,44,Hà Nội,Pink,Hermes,T-Shirt,2025-02-27 13:50:07
+150,Mẫn,male,42,TP.HCM,White,Chanel,Sneakers,2025-06-16 15:40:03
+151,Hà My,female,57,Hà Nội,Beige,Burberry,Shorts,2025-08-02 08:21:50
+152,Vân,female,50,Hà Nội,Yellow,Zara,Dress,2025-05-30 11:41:47
+153,Tín,female,30,Hà Nội,Brown,Uniqlo,Jeans,2025-03-04 23:41:26
+154,Khánh,male,60,Đà Nẵng,Black,Adidas,Shirt,2025-08-12 18:46:54
+155,Hiếu,female,38,Đà Nẵng,Brown,Levi's,Dress,2025-06-01 22:41:58
+156,Vy,female,52,TP.HCM,Blue,H&M,Jeans,2025-04-01 02:58:52
+157,Hảo,female,55,TP.HCM,Gray,Fila,Jacket,2025-03-01 23:28:27
+158,Thành,female,56,Đà Nẵng,Gray,Under Armour,T-Shirt,2025-03-30 02:09:34
+159,Nguyên,female,59,Cần Thơ,Blue,Zara,Skirt,2025-07-25 08:34:38
+160,Bảo,female,56,Huế,Green,Hermes,Sneakers,2025-09-05 03:28:30
+161,Quân,female,46,Hà Nội,Red,Lacoste,Hat,2025-08-04 14:18:23
+162,Phúc,female,60,Đà Nẵng,Black,Lacoste,Sneakers,2025-06-02 18:12:45
+163,Bình,male,54,Huế,Green,Gucci,Hat,2025-08-01 16:06:02
+164,Phúc,male,56,TP.HCM,Yellow,Under Armour,Jacket,2025-07-26 14:31:12
+165,Tín,male,56,Hà Nội,Green,Hermes,T-Shirt,2025-10-17 02:43:44
+166,Ngân,female,24,Hà Nội,Green,New Balance,Shorts,2025-05-14 08:01:30
+167,Phát,male,24,Cần Thơ,Beige,Dior,Bag,2025-06-11 08:55:07
+168,Tiến,male,32,Huế,Green,New Balance,Jeans,2025-05-10 21:10:58
+169,Nguyên,male,25,TP.HCM,Brown,Burberry,Shirt,2025-09-12 22:29:36
+170,Khang,female,16,Đà Nẵng,Pink,Uniqlo,Skirt,2025-10-18 20:42:35
+171,Kiên,female,53,Huế,Beige,Uniqlo,Dress,2025-04-25 08:54:42
+172,Hiền,male,55,Cần Thơ,Beige,Reebok,Dress,2025-02-17 20:48:02
+173,Diệu,male,56,Huế,Green,Calvin Klein,Jeans,2025-05-26 15:10:36
+174,My,male,18,Đà Nẵng,Gray,Uniqlo,Jeans,2025-03-28 17:36:28
+175,Thắng,male,40,Huế,Beige,Burberry,Shorts,2025-10-12 05:03:17
+176,Tiên,male,42,Hà Nội,Gray,Reebok,Shorts,2025-10-29 06:26:58
+177,Trang,male,60,Đà Nẵng,Red,Hermes,Skirt,2025-07-20 10:51:07
+178,Thắng,female,22,Đà Nẵng,Pink,Converse,T-Shirt,2025-04-22 19:13:15
+179,Anh,female,28,Hà Nội,Gray,Zara,Dress,2025-10-28 19:54:11
+180,Diệu,male,19,Đà Nẵng,Red,Levi's,Hat,2025-10-13 18:24:12
+181,Quyên,male,51,TP.HCM,Yellow,Puma,Dress,2025-05-04 05:47:37
+182,Yến,male,54,Hà Nội,Green,Levi's,Jacket,2025-02-15 00:41:36
+183,Vũ,female,27,Hà Nội,Black,Levi's,T-Shirt,2025-10-24 07:30:23
+184,Phúc,male,53,Đà Nẵng,Black,H&M,Sneakers,2025-08-31 21:22:01
+185,Hạnh,male,42,Cần Thơ,White,Zara,Skirt,2025-02-24 11:20:55
+186,Hào,female,48,Cần Thơ,White,Hermes,Bag,2025-02-19 10:35:33
+187,Thảo,male,58,Cần Thơ,Green,Hermes,T-Shirt,2025-04-24 14:08:14
+188,Hiếu,female,41,Huế,White,Chanel,Skirt,2025-07-08 18:06:53
+189,Hương,male,36,Cần Thơ,Blue,Zara,Jacket,2025-04-05 22:47:14
+190,Trang,female,40,Cần Thơ,Pink,The North Face,Skirt,2025-08-15 14:03:57
+191,Giang,female,22,Hà Nội,Pink,Puma,Shorts,2025-02-08 08:56:41
+192,Hào,male,42,Đà Nẵng,Gray,Lacoste,Shorts,2025-07-02 11:20:57
+193,Tú Anh,male,36,Huế,Beige,Under Armour,Shirt,2025-07-20 07:00:02
+194,Nga,female,20,Hà Nội,White,Zara,Shorts,2025-08-06 08:57:26
+195,Khôi,female,24,Cần Thơ,Black,Fila,Bag,2025-03-29 02:59:02
+196,Cường,female,58,Hà Nội,Brown,Converse,Shorts,2025-02-17 13:49:41
+197,Mẫn,male,34,Cần Thơ,Green,Converse,Jeans,2025-04-05 19:02:36
+198,Thư,male,25,Huế,Red,Uniqlo,Shirt,2025-10-23 14:58:16
+199,Cường,female,23,Đà Nẵng,Yellow,Gucci,Shorts,2025-01-03 21:27:11
+200,Cường,male,54,Đà Nẵng,Black,H&M,Sneakers,2025-10-26 11:36:16
+

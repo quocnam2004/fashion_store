@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>Admin Dashboard</h1>
+<p>Quản lý sản phẩm (CRUD tạm để bổ sung sau)</p>
+<table class="admin-table">
+  <tr><th>ID</th><th>Name</th><th>Category</th><th>Price</th></tr>
+  {% for p in products %}
+    <tr><td>{{ p.get('id') }}</td><td>{{ p.get('name') }}</td><td>{{ p.get('category') }}</td><td>{{ p.get('price') }}</td></tr>
+  {% endfor %}
+</table>
+{% endblock %}

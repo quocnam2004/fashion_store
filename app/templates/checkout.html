@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>Thanh toán</h1>
+<form method="post">
+  <label>Họ tên</label><input name="name" required>
+  <label>Số điện thoại</label><input name="phone" required>
+  <label>Địa chỉ</label><input name="address" required>
+  <label>Phương thức thanh toán</label>
+  <select name="method"><option>COD</option><option>Thẻ</option></select>
+  <button class="btn" type="submit">Xác nhận</button>
+</form>
+{% endblock %}

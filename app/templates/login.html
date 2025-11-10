@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="login-container">
+  <div class="login-card">
+    <h2 class="login-title">Đăng nhập</h2>
+
+    {% with messages = get_flashed_messages(with_categories=true) %}
+      {% if messages %}
+        {% for category, message in messages %}
+          <div class="flash {{ category }}">{{ message }}</div>
+        {% endfor %}
+      {% endif %}
+    {% endwith %}
+
+    <form method="POST" class="login-form">
+      <div class="form-group">
+        <label for="email">Tên người dùng hoặc Email</label>
+        <input type="text" name="email" id="email" placeholder="Nhập username hoặc email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="password">Mật khẩu</label>
+        <input type="password" name="password" id="password" placeholder="Nhập mật khẩu" required>
+      </div>
+
+      <button type="submit" class="btn-login">Đăng nhập</button>
+    </form>
+
+    <p class="signup-text">
+      Chưa có tài khoản? 
+      <a href="{{ url_for('account.register') }}">Đăng ký ngay</a>
+    </p>
+  </div>
+</div>
+{% endblock %}

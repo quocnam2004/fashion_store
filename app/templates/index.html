@@ -1,0 +1,106 @@
+{% extends 'base.html' %}
+{% block content %}
+<!-- 🔥 Banner carousel thời trang -->
+<section class="hero-carousel">
+  <div class="carousel-container">
+
+    <!-- Slide 1 -->
+    <div class="carousel-slide active" style="background-image: url('https://images.pexels.com/photos/6311657/pexels-photo-6311657.jpeg');">
+      <div class="carousel-overlay"></div>
+      <div class="carousel-content">
+        <h1>Đón đầu xu hướng 2025</h1>
+        <p>Ưu đãi đến <strong>50%</strong> cho bộ sưu tập Thu Đông</p>
+        <a href="{{ url_for('app_routes.category', cat='unisex') }}" class="btn-hero">Mua ngay</a>
+      </div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="carousel-slide" style="background-image: url('https://images.pexels.com/photos/1036623/pexels-photo-1036623.jpeg');">
+      <div class="carousel-overlay"></div>
+      <div class="carousel-content">
+        <h1>Thời trang Unisex</h1>
+        <p>Đa phong cách – Phá cách giới hạn</p>
+        <a href="{{ url_for('app_routes.category', cat='unisex') }}" class="btn-hero">Khám phá ngay</a>
+      </div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="carousel-slide" style="background-image: url('https://images.pexels.com/photos/5325887/pexels-photo-5325887.jpeg');">
+      <div class="carousel-overlay"></div>
+      <div class="carousel-content">
+        <h1>Bộ sưu tập mới</h1>
+        <p>Phong cách tối giản, tinh tế & hiện đại</p>
+        <a href="{{ url_for('app_routes.category', cat='unisex') }}" class="btn-hero">Xem bộ sưu tập</a>
+      </div>
+    </div>
+
+    <!-- Nút điều hướng -->
+    <div class="carousel-nav">
+      <button class="prev">&#10094;</button>
+      <button class="next">&#10095;</button>
+    </div>
+
+    <!-- Dấu chấm nhỏ -->
+    <div class="carousel-dots"></div>
+  </div>
+</section>
+
+
+
+<section class="categories">
+  <h2>Danh mục nổi bật</h2>
+  <div class="category-grid">
+    <a class="cat-card" href="{{ url_for('app_routes.category', cat='nam') }}">Nam</a>
+    <a class="cat-card" href="{{ url_for('app_routes.category', cat='nu') }}">Nữ</a>
+    <a class="cat-card" href="{{ url_for('app_routes.category', cat='unisex') }}">Unisex</a>
+  </div>
+</section>
+
+<section>
+  <h2>Sản phẩm nổi bật</h2>
+  <div class="product-grid">
+    {% for p in products %}
+      <div class="product-card">
+        <a href="{{ url_for('app_routes.product_detail', pid=p.get('id')) }}">
+          <img src="{{ p.get('image', 'https://via.placeholder.com/400x400?text=No+Image') }}"
+               alt="{{ p.get('name', '') }}">
+        </a>
+
+        <h4>{{ p.get('name') or p.get('title') or p.get('product_name') or 'Không có tên' }}</h4>
+
+
+        <p class="price">{{ "{:,.0f}".format(p.get('price') | float(default=0)) }} VNĐ</p>
+
+
+        <a class="btn" href="{{ url_for('app_routes.product_detail', pid=p.get('id')) }}">Xem chi tiết</a>
+      </div>
+    {% endfor %}
+  </div>
+</section>
+
+<!-- Pagination for home -->
+{% if total_pages > 1 %}
+<div class="pagination">
+  {% if page > 1 %}
+    <a class="page-btn" href="{{ url_for('app_routes.index', page=page-1) }}">&laquo; Trước</a>
+  {% endif %}
+
+  {% for pnum in range(1, total_pages + 1) %}
+    {% if pnum == page %}
+      <span class="page-btn active">{{ pnum }}</span>
+    {% else %}
+      <a class="page-btn" href="{{ url_for('app_routes.index', page=pnum) }}">{{ pnum }}</a>
+    {% endif %}
+  {% endfor %}
+
+  {% if page < total_pages %}
+    <a class="page-btn" href="{{ url_for('app_routes.index', page=page+1) }}">Sau &raquo;</a>
+  {% endif %}
+</div>
+{% endif %}
+
+
+
+
+
+{% endblock %}

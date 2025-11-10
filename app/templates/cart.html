@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>Giỏ hàng</h1>
+{% if items %}
+  <table class="cart-table">
+    <tr><th>Sản phẩm</th><th>Đơn giá</th><th>Số lượng</th><th>Thành tiền</th><th></th></tr>
+    {% for it in items %}
+      <tr>
+        <td>{{ it.product.name }}</td>
+        <td>{{ it.product.price }} VNĐ</td>
+        <td>{{ it.qty }}</td>
+        <td>{{ it.subtotal }} VNĐ</td>
+        <td><a href="{{ url_for('app_routes.cart_remove', pid=it.product.id) }}">Xóa</a></td>
+      </tr>
+    {% endfor %}
+  </table>
+  <div class="cart-total">Tổng: <strong>{{ total }} VNĐ</strong></div>
+  <a class="btn" href="{{ url_for('app_routes.checkout') }}">Thanh toán</a>
+{% else %}
+  <p>Giỏ hàng trống.</p>
+{% endif %}
+{% endblock %}

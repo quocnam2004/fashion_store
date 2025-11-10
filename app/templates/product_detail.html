@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="product-detail">
+  <div class="gallery">
+    <img src="{{ product.get('image', 'https://via.placeholder.com/400x400?text=No+Image') }}" 
+         alt="{{ product.get('name', '') }}">
+  </div>
+  <div class="info">
+    <h1>{{ product.get('name', '') }}</h1>
+    <p class="price">{{ "{:,.0f}".format(product.get('price') | float(default=0)) }} VNĐ</p>
+
+    <p>{{ product.get('description', 'Không có mô tả') }}</p>
+    <p><strong>Danh mục:</strong> {{ product.get('category', '') | capitalize }}</p>
+    <p><strong>Thương hiệu:</strong> {{ product.get('brand', '') }}</p>
+    <p><strong>Màu sắc:</strong> {{ product.get('color', '') }}</p>
+    <p><strong>Size:</strong> {{ product.get('size', '') }}</p>
+    <form method="post" action="{{ url_for('app_routes.cart_add', pid=product.get('id')) }}">
+      <label>Số lượng:</label>
+      <input type="number" name="qty" min="1" value="1">
+      <button class="btn" type="submit">🛒 Thêm vào giỏ hàng</button>
+    </form>
+  </div>
+</div>
+
+<h3>Sản phẩm tương tự</h3>
+<div class="product-grid">
+  {% for s in similar %}
+  <div class="product-card">
+    <a href="{{ url_for('app_routes.product_detail', pid=s.get('id')) }}">
+      <img src="{{ s.get('image') }}" alt="{{ s.get('name') }}">
+      <h4>{{ s.get('name') }}</h4>
+      <p class="price">{{ "{:,.0f}".format(product.get('price') | float(default=0)) }} VNĐ</p>
+
+    </a>
+  </div>
+  {% endfor %}
+</div>
+{% endblock %}
