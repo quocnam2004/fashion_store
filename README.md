@@ -61,7 +61,8 @@ users.csv
 
 history.csv
 
-🧩 4️⃣ Chạy ứng dụng Flask
+🧩 4️⃣ Chạy ứng dụng Flask:
+
 python app.py
 
 🧩 5️⃣ Truy cập website
