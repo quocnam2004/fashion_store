@@ -510,32 +510,7 @@ form input:focus {
 .page-btn:hover { background: var(--primary); color: #fff; }
 .page-btn.active { background: var(--primary); color: #fff; cursor: default; }
 
-.register-form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  max-width: 400px;
-  margin: 0 auto;
-}
-.register-form label {
-  font-weight: 600;
-}
-.register-form input {
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-}
-.register-form button {
-  background-color: #007bff;
-  color: white;
-  padding: 10px;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-}
-.register-form button:hover {
-  background-color: #0056b3;
-}
+
 .flash {
   margin: 5px 0;
   padding: 8px;
@@ -676,204 +651,7 @@ form input:focus {
   color: #842029;
 }
 
-/* =========================
-   REGISTER PAGE STYLING
-   ========================= */
-.register-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 85vh;
-  background-color: #f9fafc;
-}
 
-.register-card {
-  background: #fff;
-  padding: 40px 50px;
-  border-radius: 16px;
-  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.08);
-  max-width: 450px;
-  width: 100%;
-}
-
-.register-title {
-  text-align: center;
-  font-size: 28px;
-  font-weight: 700;
-  color: #222;
-  margin-bottom: 25px;
-}
-
-.register-form {
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
-}
-
-.register-form .form-group {
-  display: flex;
-  flex-direction: column;
-}
-
-.register-form label {
-  font-weight: 600;
-  color: #333;
-  margin-bottom: 6px;
-}
-
-.register-form input {
-  padding: 10px 14px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  font-size: 15px;
-  transition: all 0.2s ease;
-}
-
-.register-form input:focus {
-  outline: none;
-  border-color: #007bff;
-  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.15);
-}
-
-.btn-register {
-  width: 100%;
-  background: linear-gradient(90deg, #007bff, #00b4ff);
-  color: #fff;
-  font-weight: 600;
-  padding: 12px;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  font-size: 16px;
-  transition: 0.2s;
-}
-
-.btn-register:hover {
-  background: linear-gradient(90deg, #0069d9, #00a0e3);
-}
-
-.login-text {
-  text-align: center;
-  margin-top: 20px;
-  font-size: 15px;
-}
-
-.login-text a {
-  color: #007bff;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-.login-text a:hover {
-  text-decoration: underline;
-}
-
-/* flash message */
-.flash {
-  margin-bottom: 12px;
-  padding: 10px 15px;
-  border-radius: 8px;
-  font-size: 14px;
-}
-.flash.success {
-  background: #d1e7dd;
-  color: #0f5132;
-}
-.flash.danger {
-  background: #f8d7da;
-  color: #842029;
-}
-
-.register-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 95vh;
-  background-color: #f9fafc;
-}
-
-.register-card {
-  background: #fff;
-  padding: 40px 50px;
-  border-radius: 16px;
-  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.08);
-  max-width: 500px;
-  width: 100%;
-}
-
-.register-title {
-  text-align: center;
-  font-size: 28px;
-  font-weight: 700;
-  color: #222;
-  margin-bottom: 25px;
-}
-
-.register-form {
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
-}
-
-.register-form .form-group {
-  display: flex;
-  flex-direction: column;
-}
-
-.register-form label {
-  font-weight: 600;
-  color: #333;
-  margin-bottom: 6px;
-}
-
-.register-form input, 
-.register-form select {
-  padding: 10px 14px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  font-size: 15px;
-  transition: all 0.2s ease;
-}
-
-.register-form input:focus, 
-.register-form select:focus {
-  outline: none;
-  border-color: #007bff;
-  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.15);
-}
-
-.btn-register {
-  width: 100%;
-  background: linear-gradient(90deg, #007bff, #00b4ff);
-  color: #fff;
-  font-weight: 600;
-  padding: 12px;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  font-size: 16px;
-  transition: 0.2s;
-}
-
-.btn-register:hover {
-  background: linear-gradient(90deg, #0069d9, #00a0e3);
-}
-
-.login-text {
-  text-align: center;
-  margin-top: 20px;
-  font-size: 15px;
-}
-
-.login-text a {
-  color: #007bff;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-.login-text a:hover {
-  text-decoration: underline;
-}
 
 /* =============================
    🔥 HERO BANNER STYLING
@@ -1098,5 +876,122 @@ form input:focus {
   .btn-hero {
     font-size: 15px;
     padding: 10px 25px;
+  }
+}
+
+
+/* =========================
+   REGISTER PAGE (FINAL FIX)
+   ========================= */
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 95vh;
+  background-color: #f9fafc;
+  padding: 40px 20px;
+}
+
+.register-card {
+  background: #fff;
+  padding: 40px 50px;
+  border-radius: 16px;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  max-width: 500px;   /* GIỚI HẠN KHUNG */
+}
+
+.register-title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 25px;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.register-form .form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.register-form label {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 6px;
+}
+
+.register-form input,
+.register-form select {
+  padding: 10px 14px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 15px;
+  transition: all 0.2s ease;
+}
+
+.register-form input:focus,
+.register-form select:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 2px rgba(0,123,255,0.15);
+}
+
+.btn-register {
+  width: 100%;
+  background: linear-gradient(90deg,#007bff,#00b4ff);
+  color: #fff;
+  font-weight: 600;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.2s;
+}
+
+.btn-register:hover {
+  background: linear-gradient(90deg,#0069d9,#00a0e3);
+}
+
+.login-text {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 15px;
+}
+
+.login-text a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.login-text a:hover {
+  text-decoration: underline;
+}
+
+/* FLASH FIX */
+.flash {
+  margin-top: 8px;
+  padding: 10px 14px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+.flash.success { background:#d1e7dd; color:#0f5132; }
+.flash.danger { background:#f8d7da; color:#842029; }
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+  .register-card {
+    padding: 28px 22px;
+    max-width: 95%;
+  }
+  .register-title {
+    font-size: 23px;
   }
 }
