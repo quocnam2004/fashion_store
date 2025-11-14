@@ -995,3 +995,38 @@ form input:focus {
     font-size: 23px;
   }
 }
+
+/* === Modern Category Cards === */
+.category-modern {
+    display: flex;
+    gap: 25px;
+    margin: 25px 0 40px;
+    justify-content: center;
+}
+
+.cat-item {
+    width: 220px;
+    height: 130px;
+    background: linear-gradient(135deg, #007bff, #0099ff);
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+    transition: 0.25s ease;
+}
+
+.cat-item span {
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+    letter-spacing: 0.5px;
+}
+
+.cat-item:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0, 123, 255, 0.35);
+    background: linear-gradient(135deg, #0068d6, #0088ff);
+}

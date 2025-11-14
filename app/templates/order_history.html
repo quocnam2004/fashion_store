@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h2>Lịch sử mua hàng</h2>
+
+{% if purchases %}
+    <ul>
+    {% for p in purchases %}
+        <li>
+            Mã SP: {{ p.product_id }} —
+            SL: {{ p.quantity }} —
+            Tiền: {{ p.total_spent | vnd }}₫ —
+            Ngày: {{ p.purchased_at }}
+        </li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>Bạn chưa mua sản phẩm nào.</p>
+{% endif %}
+
+{% endblock %}

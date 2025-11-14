@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+  <h2>{% if action=='create' %}Tạo sản phẩm mới{% else %}Chỉnh sửa sản phẩm{% endif %}</h2>
+
+  <form method="POST" style="max-width:800px;margin-top:12px">
+    <label>Tên sản phẩm</label>
+    <input type="text" name="title" value="{{ product.title if product else '' }}" required>
+
+    <label>Giá</label>
+    <input type="number" name="price" value="{{ product.price if product else '' }}" required>
+
+    <label>Giới tính (gender)</label>
+    <input type="text" name="gender" value="{{ product.gender if product else '' }}">
+
+    <label>Danh mục (category)</label>
+    <input type="text" name="category" value="{{ product.category if product else '' }}">
+
+    <label>Ảnh (image_url)</label>
+    <input type="text" name="image_url" value="{{ product.image_url if product else '' }}">
+
+    <label>Mô tả</label>
+    <textarea name="description">{{ product.description if product else '' }}</textarea>
+
+    <label>Stock</label>
+    <input type="number" name="stock" value="{{ product.stock if product else '0' }}">
+
+    <label>Màu</label>
+    <input type="text" name="color" value="{{ product.color if product else '' }}">
+
+    <label>Size</label>
+    <input type="text" name="size" value="{{ product.size if product else '' }}">
+
+    <br><br>
+    <button class="btn btn-primary" type="submit">{% if action=='create' %}Tạo{% else %}Lưu thay đổi{% endif %}</button>
+    <a href="{{ url_for('app_routes.admin_products') }}" class="btn" style="background:#ddd;color:#333;margin-left:8px">Hủy</a>
+  </form>
+</div>
+{% endblock %}

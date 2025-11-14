@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="edit-container">
+  <div class="edit-card">
+
+    <h2 class="edit-title">Chỉnh sửa thông tin cá nhân</h2>
+
+    {% with messages = get_flashed_messages(with_categories=true) %}
+      {% if messages %}
+        {% for category, message in messages %}
+          <div class="flash {{ category }}">{{ message }}</div>
+        {% endfor %}
+      {% endif %}
+    {% endwith %}
+
+    <form method="POST" class="edit-form">
+
+      <div class="form-group">
+        <label>Username</label>
+        <input type="text" name="username" value="{{ user.username }}" required>
+      </div>
+
+      <div class="form-group">
+        <label>Giới tính</label>
+        <select name="gender" required>
+          <option value="">-- Chọn giới tính --</option>
+          <option value="male" {% if user.gender=='male' %}selected{% endif %}>Nam</option>
+          <option value="female" {% if user.gender=='female' %}selected{% endif %}>Nữ</option>
+          <option value="unisex" {% if user.gender=='unisex' %}selected{% endif %}>Unisex</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>Tuổi</label>
+        <input type="number" name="age" min="10" max="90" value="{{ user.age }}" required>
+      </div>
+
+      <div class="form-group">
+        <label>Địa chỉ</label>
+        <input type="text" name="location" value="{{ user.location }}" required>
+      </div>
+
+      <div class="form-group">
+        <label>Màu yêu thích</label>
+        <input type="text" name="preferred_color" value="{{ user.preferred_color }}">
+      </div>
+
+      <div class="form-group">
+        <label>Thương hiệu yêu thích</label>
+        <input type="text" name="preferred_brand" value="{{ user.preferred_brand }}">
+      </div>
+
+      <div class="form-group">
+        <label>Danh mục yêu thích</label>
+        <input type="text" name="favorite_category" value="{{ user.favorite_category }}">
+      </div>
+
+      <button type="submit" class="btn-save">Lưu thay đổi</button>
+      <a href="{{ url_for('account.account_page') }}" class="btn-cancel">Hủy</a>
+
+    </form>
+
+  </div>
+</div>
+
+{% endblock %}

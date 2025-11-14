@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+  <div style="display:flex;justify-content:space-between;align-items:center">
+    <h2>Quản lý sản phẩm</h2>
+    <a href="{{ url_for('app_routes.admin_create_product') }}" class="btn">Tạo sản phẩm mới</a>
+  </div>
+
+  <table class="cart-table" style="margin-top:16px">
+    <tr>
+      <th>ID</th>
+      <th>Ảnh</th>
+      <th>Tên</th>
+      <th>Category</th>
+      <th>Gender</th>
+      <th>Giá</th>
+      <th>Stock</th>
+      <th>Hành động</th>
+    </tr>
+    {% for p in products %}
+    <tr>
+      <td>{{ p.id }}</td>
+      <td><img src="{{ p.image_url }}" width="80"></td>
+      <td>{{ p.title }}</td>
+      <td>{{ p.category }}</td>
+      <td>{{ p.gender }}</td>
+      <td>{{ "{:,".format(p.price|int) }}₫</td>
+      <td>{{ p.stock }}</td>
+      <td>
+        <a class="btn" href="{{ url_for('app_routes.admin_edit_product', pid=p.id) }}">Sửa</a>
+        <form action="{{ url_for('app_routes.admin_delete_product', pid=p.id) }}" method="POST" style="display:inline">
+          <button class="btn" style="background:#e74c3c;border:none;color:white;padding:6px 10px;border-radius:6px" onclick="return confirm('Xóa sản phẩm này?')">Xóa</button>
+        </form>
+      </td>
+    </tr>
+    {% endfor %}
+  </table>
+</div>
+{% endblock %}

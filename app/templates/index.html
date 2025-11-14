@@ -48,12 +48,22 @@
 
 
 <section class="categories">
-  <h2>Danh mục nổi bật</h2>
-  <div class="category-grid">
-    <a class="cat-card" href="{{ url_for('app_routes.category', cat='nam') }}">Nam</a>
-    <a class="cat-card" href="{{ url_for('app_routes.category', cat='nu') }}">Nữ</a>
-    <a class="cat-card" href="{{ url_for('app_routes.category', cat='unisex') }}">Unisex</a>
+  <h2 class="section-title">Danh mục nổi bật</h2>
+
+  <div class="category-modern">
+    <a href="{{ url_for('app_routes.category', cat='male') }}" class="cat-item">
+        <span>Nam</span>
+    </a>
+
+    <a href="{{ url_for('app_routes.category', cat='female') }}" class="cat-item">
+        <span>Nữ</span>
+    </a>
+
+    <a href="{{ url_for('app_routes.category', cat='unisex') }}" class="cat-item">
+        <span>Unisex</span>
+    </a>
   </div>
+
 </section>
 
 <section>
